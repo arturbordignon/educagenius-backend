@@ -28,7 +28,7 @@ app.use("/api/users", userRoute);
 app.use("/openai", openAiRoute);
 app.post("/hotmart-webhook", hotmartController);
 
-const root = require("path").join(__dirname, "/build", "index.html");
+const root = require("path").join(__dirname, "/build");
 
 app.use(express.static(root));
 
